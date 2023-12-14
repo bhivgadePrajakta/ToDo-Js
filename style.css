@@ -50,6 +50,8 @@ input{
 button{
     border: none;
     outline: none;
+    display: block;
+    width: 30%;
     padding: 16px 50px;
     background: #ff5945;
     color: #fff;
@@ -57,6 +59,7 @@ button{
     cursor: pointer;
     border-radius: 40px;
 }
+
 ul li{
     list-style: none;
     font-size: 17px;
@@ -99,4 +102,42 @@ ul li span{
 
 ul li span:hover{
     background: #edeef0;
+}
+
+/* small screen */
+@media only screen and (max-width:600px){
+    .container{
+
+        background: linear-gradient(135deg,#385ca1,#a65bb8);
+    }
+    .row{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #edeef0;
+        border-radius: 30px;
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    button{
+        border: none;
+        outline: none;
+        display: block;
+        width: 25%;
+        padding: 14px 30px;
+        background: #ff5945;
+        color: #fff;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 40px;
+    }
+    .todo-app{
+        width: 100%;
+        max-width: 540px;
+        background: #fff;
+        margin: 100px auto 20px;
+        padding: 40px 30px 70px;
+        border-radius: 10px;
+    }
 }
